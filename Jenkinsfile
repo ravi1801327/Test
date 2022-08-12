@@ -8,6 +8,7 @@ pipeline {
         }
         stage('Printing'){
             steps {
+                sudo chmod +x test.sh
                 sh './test.sh'
             }
         }
