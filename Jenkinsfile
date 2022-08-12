@@ -8,7 +8,6 @@ pipeline {
         }
         stage('Printing'){
             steps {
-                chmod 777 ./test.sh
                 sh './test.sh'
             }
         }
