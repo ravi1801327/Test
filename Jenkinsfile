@@ -1,12 +1,10 @@
 pipeline {
     agent any
-    stages {
-        stage('Cloning the repository'){
-        echo "Cloning the repository"
-        }
-        stage('Script') {
-            echo "Script is running properly "
+    stages{
+        stage('Printing'){
+            steps {
+                echo "This is basic pipeline"
             }
         }
     }
-
+}
